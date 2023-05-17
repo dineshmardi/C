@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+// first way to entr array value
+  int arr[]={1,2,3,4,5};
+  printf("%d",arr);
+    return 0;
+
+    //second way to add values
+    int a,j;
+    printf("enter the size of the array=");
+    scanf("%d",&a);
+    int arr[a];
+    j=1;
+   // arr[2]=3;
+    for (int i=0;i<a;i++)
+    {
+        printf("enter the values %d =",j);
+        scanf("%d",&arr[i]);
+        j++;
+    }
+    printf("the values are=");
+    for (int i=0;i<a;i++)
+    {
+       printf("%d\n",arr[i]);
+
+    }
+    //third way to play with array
+    /*char arr[]={"hello"};
+    printf("%c",arr[4]);*/
+
+    //here creating two dimensional aray
+   int arr[2][3]={{1,2,3},{4,5,6}};
+    for (int i=0;i<2;i++)
+    {
+        for (int j=0;j<3;j++)
+        {
+            if(i==0)
+            {
+                printf("%d ",arr[i][j]);
+            }
+            else
+            {
+                printf("\n");
+            }
+
+
+            }
+
+
+
+
+        }
+        for (int i=0;i<3;i++)
+        {
+            for (int j=0;j<3;j++)
+        {
+            if(i==1)
+            {
+                printf("%d ",arr[i][j]);
+            }
+
+        }
+        }
+        
+        
+        //try more methods for 2d array
+        
+        
+
+
+    return 0;
+}
